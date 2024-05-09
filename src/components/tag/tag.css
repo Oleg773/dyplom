@@ -1,0 +1,8 @@
+.tag {
+  padding: 5px 10px;
+  background-color: var(--secondary-tag-color);
+  color: var(--main-white-text-color);
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold;
+}

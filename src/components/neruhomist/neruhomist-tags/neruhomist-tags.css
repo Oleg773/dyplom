@@ -1,0 +1,17 @@
+.neruhomist-tags {
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+}
+
+.neruhomist-tags .status-tag {
+  background-color: var(--main-tag-color);
+}
+
+.neruhomist-tags a {
+  text-decoration: none;
+}
+
+.neruhomist-tags .status-tag:hover {
+  background-color: var(--main-tag-hover-color);
+}

@@ -1,0 +1,19 @@
+.pravyla-ta-umovy-vykorystannya-sajtu h2 {
+  color: var(--main-black-header-color);
+}
+
+.pravyla-ta-umovy-vykorystannya-sajtu h3:first-child {
+  color: var(--secondary-black-text-color);
+  margin-top: 20px;
+}
+
+.pravyla-ta-umovy-vykorystannya-sajtu h3 {
+  color: var(--secondary-black-text-color);
+  margin: 40px 0px 20px 0px;
+}
+
+.pravyla-ta-umovy-vykorystannya-sajtu p {
+  color: var(--main-black-text-color);
+  margin-bottom: 10px;
+  line-height: 25px;
+}

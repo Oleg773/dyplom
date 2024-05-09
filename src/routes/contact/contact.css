@@ -1,0 +1,79 @@
+.contact-header {
+  padding: 100px 150px;
+  background-image: url('../../../public/contact-background1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: xx-large;
+  color: var(--main-white-text-color);
+  font-weight: bold;
+}
+
+.contact-main-container {
+  display: grid;
+  grid-template-columns: 68% 28%;
+  gap: 4%;
+  margin: 30px;
+
+  color: var(--main-black-text-color);
+  line-height: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .contact-form-2columns {
+  display: flex;
+}
+.contact-form .contact-form-2columns > div {
+  width: 50%;
+}
+
+.contact-form label {
+  display: block;
+}
+
+.contact-form input:not([type='checkbox']) {
+  width: calc(100% - 20px);
+  height: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.337);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-form textarea {
+  width: calc(100% - 20px);
+  height: 300px;
+  border: 1px solid rgba(128, 128, 128, 0.337);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-form button {
+  height: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.337);
+  border-radius: 5px;
+  background-color: var(--main-bg-color);
+  color: var(--main-white-text-color);
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.contact-links {
+  margin-top: 20px;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-links a {
+  color: var(--main-link-color);
+}
+
+.contact-links a > svg {
+  width: 40px;
+  height: 40px;
+}

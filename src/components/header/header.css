@@ -1,0 +1,94 @@
+.header {
+  height: 100px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.header-logo img {
+  height: 60px;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  margin-right: 30px;
+  height: 100%;
+}
+
+.header-menu-icon {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.header-menu-icon > svg {
+  width: 25px;
+  height: 25px;
+  color: var(--secondary-white-text-color);
+}
+
+.header-menu-icon:hover {
+  background-color: var(--main-bg-hover-color);
+}
+
+.header-menu .header-menu-links-container {
+  width: 0px;
+  height: 100%;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+.header-menu.active .header-menu-links-container {
+  width: 100px;
+}
+
+.header-menu .header-menu-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--main-bg-color);
+}
+
+.header-menu .header-menu-links a {
+  text-decoration: none;
+}
+
+.header-menu .header-menu-links div {
+  padding: 2px 0px;
+  color: var(--main-link-color);
+}
+
+.header-menu .header-menu-links div.active {
+  background-color: var(--main-bg-hover-color);
+}
+
+.header .header-contacts-text-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header .header-contacts-text-links a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.header-contacts-text-phone {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  color: var(--secondary-white-text-color);
+}
+
+.header-contacts-links a > svg {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  color: var(--secondary-white-text-color);
+}

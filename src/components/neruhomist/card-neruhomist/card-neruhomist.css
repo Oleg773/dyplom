@@ -1,0 +1,119 @@
+.card-neruhomist-container {
+  display: flex;
+  padding: 0px !important;
+  color: var(--main-black-text-color);
+}
+
+.card-neruhomist-container-card {
+  flex-direction: column;
+}
+
+.card-neruhomist-gallery {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.card-neruhomist-container-list .card-neruhomist-gallery {
+  width: 300px;
+  height: 100%;
+}
+
+.card-neruhomist-container-card .card-neruhomist-gallery {
+  height: 300px;
+}
+
+.card-neruhomist-container-gallery .card-neruhomist-gallery {
+  height: 600px;
+}
+
+.card-neruhomist-details {
+  padding: 20px;
+}
+
+.card-neruhomist-details h4 {
+  margin: 10px 0px;
+}
+
+.card-neruhomist-details h4 a {
+  text-decoration: none;
+  color: var(--main-black-text-color);
+}
+
+.card-neruhomist-details p {
+  font-size: smaller;
+  margin: 0px;
+}
+
+.card-neruhomist-container-gallery .card-neruhomist-details p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  color: var(--main-white-text-color);
+  text-shadow: 0 0 5px #00000045;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.card-neruhomist-container-card .card-neruhomist-details {
+  padding: 15px 20px;
+}
+
+.card-neruhomist-container-card .card-neruhomist-details h4 {
+  margin-top: 0px;
+}
+
+.card-neruhomist-tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.card-neruhomist-container-card,
+.card-neruhomist-container-gallery {
+  position: relative;
+}
+
+.card-neruhomist-container-card .card-neruhomist-tags,
+.card-neruhomist-container-gallery .card-neruhomist-tags {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  color: var(--main-white-text-color);
+}
+
+.card-neruhomist-container-card
+  .card-neruhomist-tags
+  .card-neruhomist-tags-price,
+.card-neruhomist-container-gallery
+  .card-neruhomist-tags
+  .card-neruhomist-tags-price {
+  padding: 4px;
+  text-shadow: 0 0 5px #0000006e;
+}
+
+.card-neruhomist-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  padding: 0;
+  font-weight: bold;
+  font-size: small;
+  margin-top: 10px;
+}
+
+.card-neruhomist-list li {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.card-neruhomist-list li > svg {
+  color: var(--secondary-white-text-color);
+}

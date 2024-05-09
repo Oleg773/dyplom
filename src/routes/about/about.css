@@ -1,0 +1,108 @@
+.about-main {
+  padding-top: 40px;
+}
+
+.about-header {
+  padding: 100px 150px;
+  background-image: url('../../../public/about-background1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: xx-large;
+  color: var(--main-white-text-color);
+  font-weight: bold;
+}
+
+.about-services {
+  padding: 100px;
+  background-image: url('../../../public/about-background2.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--main-white-text-color);
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.about-services h3 {
+  color: var(--secondary-white-text-color);
+  font-size: xx-large;
+}
+
+.about-description {
+  margin: 40px 50px;
+  color: var(--main-black-text-color);
+  line-height: 30px;
+}
+
+.about-2columns {
+  columns: 2;
+  column-gap: 40px;
+}
+
+.about-description-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.about-description-card > div {
+  width: 250px;
+  height: 400px;
+  background-image: url('../../../public/about-background3.png');
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 30px 10px;
+  margin: 10px 0px;
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transform: perspective(800px) rotateX(0deg);
+}
+
+@keyframes rotate-card-1half {
+  0% {
+    transform: perspective(800px) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(800px) rotateX(90deg);
+  }
+}
+
+@keyframes rotate-card-2half {
+  0% {
+    transform: perspective(800px) rotateX(270deg);
+  }
+  100% {
+    transform: perspective(800px) rotateX(360deg);
+  }
+}
+
+.about-description-card:hover > div {
+  animation:
+    rotate-card-1half 0.2s linear 0s 1,
+    rotate-card-2half 0.2s linear 0.2s 1;
+}
+
+.about-description-card > div p:first-child {
+  color: var(--secondary-white-text-color);
+  font-weight: bold;
+}
+
+.about-description-card > div p {
+  color: var(--main-white-text-color);
+  line-height: 23px;
+}
+
+.about-description-card:hover > div p:first-child {
+  display: block;
+}
+
+.about-description-card:hover > div p {
+  display: none;
+}

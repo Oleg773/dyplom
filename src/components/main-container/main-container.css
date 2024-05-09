@@ -1,0 +1,10 @@
+.main-container {
+  background-color: var(--main-bg-website-color);
+  min-height: 300px;
+}
+
+.main-container-box {
+  max-width: 1410px;
+  margin: auto;
+  padding: 20px 30px 50px 30px;
+}

@@ -1,0 +1,44 @@
+.cards-neruhomist-layout {
+  display: grid;
+  gap: 30px 4%;
+}
+
+.cards-neruhomist-layout-card {
+  grid-template-columns: 48% 48%;
+}
+
+.cards-neruhomist-layout-list {
+  grid-template-columns: 100%;
+}
+
+.cards-neruhomist-layout-gallery {
+  grid-template-columns: 100%;
+}
+
+.cards-neruhomist-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-layout-switch {
+  display: flex;
+}
+
+.cards-layout-switch > div {
+  padding: 5px 5px;
+  cursor: pointer;
+  color: var(--main-black-text-color);
+  opacity: 0.7;
+}
+
+.cards-layout-switch > div.cards-layout-switch-active {
+  cursor: initial;
+  color: var(--secondary-black-text-color);
+  opacity: 1;
+}
+
+.cards-layout-switch > div > svg {
+  width: 25px;
+  height: 25px;
+}

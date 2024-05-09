@@ -1,0 +1,6 @@
+.wide-container {
+  background-color: var(--main-container-color);
+  padding: 25px;
+  width: 108%;
+  margin-left: -4%;
+}

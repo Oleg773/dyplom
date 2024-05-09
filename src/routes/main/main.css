@@ -1,0 +1,64 @@
+.main-header {
+  padding: 100px 150px;
+  background-image: url('../../../public/main-background1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: xx-large;
+  color: var(--main-white-text-color);
+  font-weight: bold;
+
+  margin-bottom: 30px;
+}
+
+.main-search-form {
+  margin-bottom: 30px;
+}
+
+.main-cards {
+  margin-bottom: 50px;
+}
+
+.main-services {
+  padding: 100px;
+  background-image: url('../../../public/main-background2.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--main-white-text-color);
+  font-weight: bold;
+  line-height: 30px;
+
+  margin-bottom: 50px;
+}
+
+.main-services h3 {
+  color: var(--secondary-white-text-color);
+  font-size: xx-large;
+}
+
+.main-services-lists {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.main-partners {
+  text-align: center;
+  color: var(--secondary-black-text-color);
+}
+
+.main-partners > h3 {
+  margin-top: 5px;
+}
+.main-partners > div {
+  display: flex;
+  gap: 20px;
+  padding: 0px 50px;
+  margin-bottom: 15px;
+}
+
+.main-partners > div img {
+  min-width: 0;
+}

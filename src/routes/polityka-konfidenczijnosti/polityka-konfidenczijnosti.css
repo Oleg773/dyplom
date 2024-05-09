@@ -1,0 +1,19 @@
+.polityka-konfidenczijnosti h2 {
+  color: var(--main-black-header-color);
+}
+
+.polityka-konfidenczijnosti h3:first-child {
+  color: var(--secondary-black-text-color);
+  margin-top: 20px;
+}
+
+.polityka-konfidenczijnosti h3 {
+  color: var(--secondary-black-text-color);
+  margin: 40px 0px 20px 0px;
+}
+
+.polityka-konfidenczijnosti p {
+  color: var(--main-black-text-color);
+  margin-bottom: 10px;
+  line-height: 25px;
+}

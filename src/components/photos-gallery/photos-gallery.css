@@ -1,0 +1,108 @@
+.photos-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.photos-gallery-preview-container {
+  height: 100px;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  scrollbar-width: thin;
+}
+
+.photos-gallery-preview-container::-webkit-scrollbar {
+  display: none;
+}
+
+.photos-gallery-preview {
+  display: flex;
+  height: 100%;
+  gap: 3px;
+}
+
+.photos-gallery-current-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photos-gallery-preview-image {
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.photos-gallery-preview-image-active {
+  border: 1px solid var(--secondary-bg-hover-color);
+}
+
+.photos-gallery-current-container {
+  position: relative;
+  height: 100%;
+}
+
+.photos-gallery-current-container button {
+  position: absolute;
+  padding: 10px 15px;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+
+  cursor: pointer;
+  color: var(--main-white-text-color);
+  font-size: large;
+  font-weight: bold;
+  background-color: var(--main-bg-color);
+  box-shadow: 0 0 6px 1px #7775756b;
+  border: none;
+  border-radius: 20%;
+}
+
+.photos-gallery-current-container button:hover {
+  background-color: var(--main-bg-hover-color);
+}
+.photos-gallery-current-container button:active {
+  box-shadow: none;
+}
+
+.photos-gallery-current-container .photos-gallery-current-back {
+  left: 20px;
+}
+
+.photos-gallery-current-container .photos-gallery-current-forward {
+  right: 20px;
+}
+
+.photos-gallery-current-image-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.photos-gallery-full-screen {
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  z-index: 1000;
+  background-color: var(--main-bg-color);
+}
+
+.photos-gallery-full-screen .photos-gallery-current-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 6px 3px var(--main-box-shadow-color);
+  padding: 20px;
+}
+
+.photos-gallery-full-screen img {
+  width: initial;
+  height: initial;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}

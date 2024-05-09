@@ -1,0 +1,49 @@
+.cards-gallery-neruhomist {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cards-gallery-neruhomist-container {
+  position: relative;
+  height: 100%;
+}
+
+.cards-gallery-neruhomist-container button {
+  position: absolute;
+  padding: 10px 15px;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+
+  cursor: pointer;
+  color: var(--main-white-text-color);
+  font-size: large;
+  font-weight: bold;
+  background-color: var(--main-bg-color);
+  box-shadow: 0 0 6px 1px #7775756b;
+  border: none;
+  border-radius: 20%;
+}
+
+.cards-gallery-neruhomist-container button:hover {
+  background-color: var(--main-bg-hover-color);
+}
+.cards-gallery-neruhomist-container button:active {
+  box-shadow: none;
+}
+
+.cards-gallery-neruhomist-container .cards-gallery-neruhomist-back {
+  left: 20px;
+  z-index: 1000;
+}
+
+.cards-gallery-neruhomist-container .cards-gallery-neruhomist-forward {
+  right: 20px;
+  z-index: 1000;
+}
+
+.cards-gallery-neruhomist-image-wrapper {
+  height: 100%;
+  width: 100%;
+}
